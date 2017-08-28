@@ -26,8 +26,8 @@ function startSearch() {
 
     queryURL += '?' + $.param({
     'q': searchTerm,
-    'begin_date': startYear,
-    'end_date': endYear,
+    //'begin_date': startYear,
+    //'end_date': endYear,
     'api_key': "149dc9ee7d31a98e5981a676b59db541:10:71604795"
     });
     console.log(queryURL);
@@ -43,7 +43,7 @@ function startSearch() {
           var headlineDiv = $("<p>").text(result.response.docs[i].headline.main).addClass("headline");
           var snippetDiv = $("<p>").text(result.response.docs[i].snippet).addClass("snippet");
         
-          var urlDiv = $("<a>").attr("href",result.response.docs[i].web_url).text("Link").addClass("link");
+          var urlDiv = $("<a>").attr("href",result.response.docs[i].web_url).text("Article Link").addClass("link");
 
           articleSection.append(headlineDiv).append(snippetDiv).append(urlDiv);
 

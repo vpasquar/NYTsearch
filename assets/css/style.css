@@ -1,21 +1,22 @@
 .articleSection {
-	margin:10px;
+	padding-top:15px;
 	border-bottom: 2px solid black;
+	border-spacing: 5px;
 }
  
 .headline {
-	font-size:32px;
-
+	font-size:30px;
+    text-align:center;
 }
 
 .snippet {
-	font-size:24px;
+	font-size:20px;
 	font-style:italic;
 }
 
 .link {
 	font-size:24px;
-
+    text-align:center;
 }
 
 
