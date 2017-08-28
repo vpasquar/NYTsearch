@@ -1,0 +1,21 @@
+.articleSection {
+	margin:10px;
+	border-bottom: 2px solid black;
+}
+ 
+.headline {
+	font-size:32px;
+
+}
+
+.snippet {
+	font-size:24px;
+	font-style:italic;
+}
+
+.link {
+	font-size:24px;
+
+}
+
+

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>New York Times Search</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+</head>
+<body>
+
+	<div class="container">
+		<div class="jumbotron text-center">
+			<h1><span class="glyphicon glyphicon-list-alt"></span> New York Times Search</h1>
+		</div>
+	</div>
+	
+	<div class="container">
+		<div class="panel panel-default">
+		  <div class="panel-heading danger">
+		    <h3 class="panel-title"><span class="glyphicon glyphicon-list-alt"></span> Search Parameters</h3>
+		  </div>
+		  <div class="panel-body">
+		   		<form>
+		  <div class="form-group">
+		    <label for="exampleInputEmail1">Search Term: </label>
+		    <input type="text" class="form-control form-query" id="input-q" placeholder="Enter Search Term" name="query">
+		  </div>
+		  <div class="form-group">
+		    <label for="exampleInputPassword1">Number of Records to Retrieve:</label>
+				<select class="form-control form-years" id = "input-num" = value = "">
+				  <option>2</option>
+				  <option>4</option>
+				  <option>6</option>
+				  <option>8</option>
+				  <option>10</option>
+				</select>
+		  </div>
+		  <div class="form-group">
+			<label for="exampleInputPassword1">Start Year (Optional)</label>
+		    <input type="text" class="form-control" id="input-startYear" placeholder="Enter Year">	
+		  </div>
+			  <div class="form-group">
+			<label for="exampleInputPassword1">End Year (Optional)</label>
+		    <input type="text" class="form-control" id="input-endYear" placeholder="Enter Year">	
+		  </div>
+		  <button type="submit" class="btn btn-default active buttons" id = "search"><span class="glyphicon glyphicon-search"></span> Submit</button>
+		  <button type="submit" class="btn btn-default active buttons" id="clear"><span class="glyphicon glyphicon-trash"></span> Clear Results</button>
+		</form>
+		  </div>
+		</div>
+	</div>
+
+<div class="container">
+		<div class="panel panel-default">
+		  <div class="panel-heading">
+		    <h3 class="panel-title"><span class="glyphicon glyphicon-list-alt"></span> Top Articles</h3>
+		  </div>
+		  <div class="panel-body" id = "article-output">
+		  </div>
+
+ <script type ="text/javascript" src="assets/javascript/search.js">  </script>
+
+</body>
+</html>
